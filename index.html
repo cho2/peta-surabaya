@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="peta-surabaya">
+    <meta name="author" content="@cho2MLHC">
+    <link rel="shortcut icon" href="lib/ico/favicon.ico">
+
+    <title>Surabaya.di.Peta.in</title>
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/css/starter-template.css" rel="stylesheet">
+
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+		
+		
+	<style>
+		body { margin:0; padding:0; }
+		#map { position:absolute; top:0; bottom:0; width:100%; }
+	</style>
+        
+<body>    
+    	
+ <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>    
+          </button>
+          <a class="navbar-brand" href="index.html"><img class="navbar-brand-image" src="lib/img/brand.png"><span style="color:green">Surabaya.</span>di.Peta.in</a>
+        </div>
+          <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://www.surabaya.go.id/">Surabaya</a></li>
+            <li class="active"><a href="http://geo.blankon.in/">Geo.BlankOn</a></li>
+            <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                    <ul class="dropdown-menu">                   
+                    <li class="dropdown-header">Author</li>
+                    <li><a href="http://cho2.web.id">Kukuh Syafaat</a></li>                             
+          </ul>
+        </div>
+      </div>
+    </div>
+	   
+	<div id='map'></div>
+	<script>		
+		var map = L.mapbox.map('map', 'cho2.hco9e78n')
+		var control = map.zoomControl.setPosition('bottomleft');
+		new L.mapbox.geocoderControl('map', 'cho2.hco9e78n').setPosition('bottomleft').addTo(map);
+	</script>
+	
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
